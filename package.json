@@ -11,7 +11,7 @@
         "test": "mocha",
         "coverage": "nyc --reporter=lcov yarn test && codecov",
         "test-report": "mocha --reporter mochawesome",
-        "lint": "eslint -c .eslintrc --ext .js ./{src,test}/**/*.js",
+        "lint": "eslint -c .eslintrc.js --ext .js ./{src,test}/**/*.js",
         "clean": "rimraf -rf ./.nyc_output ./coverage ./mochawesome-report"
     },
     "husky": {
@@ -21,7 +21,7 @@
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
-            "eslint -c .eslintrc"
+            "eslint -c .eslintrc.js"
         ],
         "*.{js,jsx,ts,tsx,json,md}": [
             "prettier --write",

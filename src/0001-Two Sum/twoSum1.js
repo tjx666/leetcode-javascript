@@ -1,4 +1,6 @@
 /**
+ * 简单暴力两个循环
+ *
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
@@ -9,8 +11,6 @@ function twoSum(nums, target) {
             if (nums[i] + nums[j] === target) return [i, j];
         }
     }
-
-    throw new Error('??? 测试用例有问题！');
 }
 
 module.exports = twoSum;

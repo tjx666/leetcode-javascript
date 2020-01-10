@@ -29,6 +29,7 @@
         ]
     },
     "devDependencies": {
+        "benchmark": "^2.1.4",
         "codecov": "^3.6.1",
         "eslint": "^6.8.0",
         "eslint-config-airbnb-base": "^14.0.0",
@@ -38,10 +39,12 @@
         "husky": "^4.0.5",
         "intelli-espower-loader": "^1.0.1",
         "lint-staged": "^9.5.0",
+        "lodash": "^4.17.15",
         "mocha": "^7.0.0",
         "mochawesome": "^4.1.0",
         "nyc": "^15.0.0",
         "power-assert": "^1.6.1",
-        "prettier": "^1.19.1"
+        "prettier": "^1.19.1",
+        "sinon": "^8.0.4"
     }
 }

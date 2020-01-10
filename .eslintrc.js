@@ -15,7 +15,20 @@ module.exports = {
     },
     rules: {
         'prettier/prettier': 0,
-        'no-unused-vars': 0,
+
+        'no-console': 0,
         'no-plusplus': 0,
+        'no-unused-vars': 0,
+        'no-unused-expressions': 0,
+        'func-names': 0,
+        'consistent-return': 0,
     },
+    overrides: [
+        {
+            files: ['{test,benchmark}/**/*.js'],
+            rules: {
+                'import/no-extraneous-dependencies': 0,
+            },
+        },
+    ],
 };

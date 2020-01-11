@@ -22,7 +22,7 @@
             "internalConsoleOptions": "openOnSessionStart",
             "env": {
                 "NODE_ENV": "test",
-                "DEBUG": "1"
+                "VSCODE": "1"
             },
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": ["--timeout", "999999", "${workspaceFolder}/test"],
@@ -30,6 +30,21 @@
         },
         {
             "name": "test-file",
+            "type": "node",
+            "request": "launch",
+            "skipFiles": ["<node_internals>/**"],
+            "stopOnEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "NODE_ENV": "test",
+                "VSCODE": "1"
+            },
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": ["--timeout", "999999", "${file}"],
+            "sourceMaps": true
+        },
+        {
+            "name": "test-debug",
             "type": "node",
             "request": "launch",
             "skipFiles": ["<node_internals>/**"],

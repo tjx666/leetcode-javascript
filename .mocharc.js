@@ -8,6 +8,10 @@ const configs = {
     colors: true,
 };
 
+if (process.env.VSCODE === '1') {
+    delete configs.spec;
+}
+
 if (process.env.DEBUG === '1') {
     delete configs.require;
     delete configs.spec;

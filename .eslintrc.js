@@ -23,6 +23,7 @@ module.exports = {
         'no-plusplus': 0,
         'no-unused-expressions': 0,
         'no-unused-vars': 0,
+        'no-bitwise': 0,
     },
     overrides: [
         {

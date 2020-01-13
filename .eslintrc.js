@@ -9,9 +9,10 @@ module.exports = {
     globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',
+        BigInt: 'readonly',
     },
     parserOptions: {
-        ecmaVersion: 2018,
+        ecmaVersion: 2020,
     },
     rules: {
         'prettier/prettier': 0,

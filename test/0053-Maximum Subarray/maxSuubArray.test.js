@@ -1,7 +1,7 @@
 const assert = require('assert');
-const maxSubArray = require('../src/0053-Maximum Subarray/maxSubArray');
+const maxSubArray = require('../../src/0053-Maximum Subarray/maxSubArray');
 
-describe('#maxSubArray', () => {
+describe('#0001-Two Sum-maxSubArray', () => {
     it('should maxSubArray([1]) return 1', () => {
         assert(maxSubArray([1]) === 1);
     });

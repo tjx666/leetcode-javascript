@@ -3,7 +3,7 @@ const { Suite } = require('benchmark');
 const removeDuplicates1 = require('../src/0026-Remove Duplicates from Sorted Array/removeDuplicates1');
 const removeDuplicates2 = require('../src/0026-Remove Duplicates from Sorted Array/removeDuplicates2');
 
-const testArr = Array.from({ length: 30 * 10000 }).map(() => 1);
+const testArr = [...Array(1e5)].map(() => 6);
 
 new Suite()
     .add('removeDuplicates1', function() {
@@ -21,9 +21,7 @@ new Suite()
     .run({ async: true });
 
 /* =>
-removeDuplicates1 x 107,409,421 ops/sec ±0.69% (93 runs sampled)
-removeDuplicates2 x 11,718,588 ops/sec ±0.60% (91 runs sampled)
+removeDuplicates1 x 94,495,506 ops/sec ±1.94% (83 runs sampled)
+removeDuplicates2 x 11,855,308 ops/sec ±3.34% (84 runs sampled)
 Fastest is removeDuplicates1
-
-结果很出人意料，暂且认为是因为我写的那个双指针最后修改 length 时，清空数组元素比较耗时，因为删掉那几句代码后结果就反过来了
  */

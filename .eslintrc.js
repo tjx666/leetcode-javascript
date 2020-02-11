@@ -1,3 +1,5 @@
+const OFF = 0;
+
 module.exports = {
     env: {
         commonjs: true,
@@ -5,32 +7,28 @@ module.exports = {
         node: true,
         mocha: true,
     },
-    extends: ['airbnb-base', 'plugin:prettier/recommended'],
+    extends: ['airbnb-base', 'prettier'],
     globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly',
         BigInt: 'readonly',
     },
-    parserOptions: {
-        ecmaVersion: 2020,
-    },
+    parser: 'babel-eslint',
     rules: {
-        'prettier/prettier': 0,
-
-        'consistent-return': 0,
-        'func-names': 0,
-        'no-console': 0,
-        'no-param-reassign': 0,
-        'no-plusplus': 0,
-        'no-unused-expressions': 0,
-        'no-unused-vars': 0,
-        'no-bitwise': 0,
+        'consistent-return': OFF,
+        'func-names': OFF,
+        'no-bitwise': OFF,
+        'no-console': OFF,
+        'no-param-reassign': OFF,
+        'no-plusplus': OFF,
+        'no-unused-expressions': OFF,
+        'no-unused-vars': OFF,
     },
     overrides: [
         {
             files: ['{test,benchmark}/**/*.js'],
             rules: {
-                'import/no-extraneous-dependencies': 0,
+                'import/no-extraneous-dependencies': OFF,
             },
         },
     ],

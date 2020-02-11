@@ -14,7 +14,7 @@
             "program": "${file}"
         },
         {
-            "name": "test",
+            "name": "test-debug",
             "type": "node",
             "request": "launch",
             "skipFiles": ["<node_internals>/**"],
@@ -22,10 +22,26 @@
             "internalConsoleOptions": "openOnSessionStart",
             "env": {
                 "NODE_ENV": "test",
-                "VSCODE": "1"
+                "VSCODE_TEST": "1",
+                "VSCODE_DEBUG": "1"
             },
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "args": ["--timeout", "999999", "${workspaceFolder}/test"],
+            "args": ["--timeout", "999999", "${file}"],
+            "sourceMaps": true
+        },
+        {
+            "name": "test-all",
+            "type": "node",
+            "request": "launch",
+            "skipFiles": ["<node_internals>/**"],
+            "stopOnEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "env": {
+                "NODE_ENV": "test",
+                "VSCODE_TEST": "1"
+            },
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": ["${workspaceFolder}/test"],
             "sourceMaps": true
         },
         {
@@ -37,25 +53,10 @@
             "internalConsoleOptions": "openOnSessionStart",
             "env": {
                 "NODE_ENV": "test",
-                "VSCODE": "1"
+                "VSCODE_TEST": "1"
             },
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "args": ["--timeout", "999999", "${file}"],
-            "sourceMaps": true
-        },
-        {
-            "name": "test-debug",
-            "type": "node",
-            "request": "launch",
-            "skipFiles": ["<node_internals>/**"],
-            "stopOnEntry": false,
-            "internalConsoleOptions": "openOnSessionStart",
-            "env": {
-                "NODE_ENV": "test",
-                "DEBUG": "1"
-            },
-            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
-            "args": ["--timeout", "999999", "${file}"],
+            "args": ["${file}"],
             "sourceMaps": true
         }
     ]

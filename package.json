@@ -9,7 +9,8 @@
     "private": true,
     "scripts": {
         "test": "mocha",
-        "coverage": "nyc --reporter=lcov yarn test && codecov",
+        "coverage": "nyc --reporter=lcov yarn test",
+        "coverage-upload": "nyc --reporter=lcov yarn test && codecov",
         "test-report": "mocha --reporter mochawesome",
         "lint": "eslint -c .eslintrc.js --ext .js ./{src,test}/**/*.js",
         "clean": "rimraf -rf ./.nyc_output ./coverage ./mochawesome-report"
@@ -35,7 +36,7 @@
         "eslint-config-airbnb-base": "^14.0.0",
         "eslint-config-prettier": "^6.10.0",
         "eslint-plugin-import": "^2.20.1",
-        "husky": "^4.2.1",
+        "husky": "^4.2.3",
         "intelli-espower-loader": "^1.0.1",
         "lint-staged": "^10.0.7",
         "lodash": "^4.17.15",

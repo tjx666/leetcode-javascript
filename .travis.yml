@@ -5,5 +5,5 @@ cache:
 install:
     - yarn
 script:
-    - yarn run lint
+    - yarn audit
     - yarn run coverage

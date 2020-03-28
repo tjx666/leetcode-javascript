@@ -1,4 +1,5 @@
 const OFF = 0;
+const ERROR = 2;
 
 module.exports = {
     env: {
@@ -24,6 +25,7 @@ module.exports = {
         'no-plusplus': OFF,
         'no-unused-expressions': OFF,
         'no-unused-vars': OFF,
+        'no-use-before-define': [ERROR, { functions: false }],
     },
     overrides: [
         {

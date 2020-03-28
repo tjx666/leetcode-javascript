@@ -20,13 +20,23 @@ describe('#0021-Merge Two Sorted Lists', () => {
             it('should return merged list', () => {
                 const l1 = { val: 2, next: { val: 3, next: null } };
                 const l2 = { val: 1, next: { val: 3, next: { val: 4, next: null } } };
-                const mergedList = mergeTwoLists(l1, l2);
-                assert.strictEqual(mergedList.val, 1);
-                assert.strictEqual(mergedList.next.val, 2);
-                assert.strictEqual(mergedList.next.next.val, 3);
-                assert.strictEqual(mergedList.next.next.next.val, 3);
-                assert.strictEqual(mergedList.next.next.next.next.val, 4);
-                assert.strictEqual(mergedList.next.next.next.next.next, null);
+                const mergedList1 = mergeTwoLists(l1, l2);
+                assert.strictEqual(mergedList1.val, 1);
+                assert.strictEqual(mergedList1.next.val, 2);
+                assert.strictEqual(mergedList1.next.next.val, 3);
+                assert.strictEqual(mergedList1.next.next.next.val, 3);
+                assert.strictEqual(mergedList1.next.next.next.next.val, 4);
+                assert.strictEqual(mergedList1.next.next.next.next.next, null);
+
+                const l3 = { val: 1, next: { val: 3, next: { val: 4, next: null } } };
+                const l4 = { val: 2, next: { val: 3, next: null } };
+                const mergedList2 = mergeTwoLists(l3, l4);
+                assert.strictEqual(mergedList2.val, 1);
+                assert.strictEqual(mergedList2.next.val, 2);
+                assert.strictEqual(mergedList2.next.next.val, 3);
+                assert.strictEqual(mergedList2.next.next.next.val, 3);
+                assert.strictEqual(mergedList2.next.next.next.next.val, 4);
+                assert.strictEqual(mergedList2.next.next.next.next.next, null);
             });
         });
     });

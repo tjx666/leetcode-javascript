@@ -33,7 +33,10 @@ function getIntersectionNode(headA, headB) {
     const set = new Set();
     currentA = headA;
     while (currentA != null) {
-        if (set.has(currentA)) return currentA;
+        if (set.has(currentA)) {
+            endA.next = null;
+            return currentA;
+        }
 
         set.add(currentA);
         currentA = currentA.next;

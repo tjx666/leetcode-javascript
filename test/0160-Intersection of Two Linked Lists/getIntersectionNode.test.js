@@ -17,6 +17,10 @@ describe('#0160-Intersection of Two Linked Lists', () => {
                     const list1 = { val: 1, next: { val: 3, next: { val: 6, next: null } } };
                     const list2 = { val: 2, next: { val: 4, next: list1.next } };
                     assert.strictEqual(getIntersectionNode(list1, list2), list1.next);
+
+                    const list3 = { val: 1, next: { val: 3, next: { val: 6, next: null } } };
+                    const list4 = { val: 2, next: { val: 4, next: null } };
+                    assert.strictEqual(getIntersectionNode(list3, list4), null);
                 });
             });
         },

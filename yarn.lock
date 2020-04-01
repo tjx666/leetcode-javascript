@@ -1948,10 +1948,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.1.0.tgz#18785bb005d5ed404f1c1db6563e082f7a7baac2"
-  integrity sha1-GHhbsAXV7UBPHB22Vj4IL3p7qsI=
+lint-staged@^10.1.1:
+  version "10.1.1"
+  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.1.1.tgz#1c8569b66d684e6e3553cd760c03053f41fca152"
+  integrity sha1-HIVptm1oTm41U812DAMFP0H8oVI=
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
@@ -3416,13 +3416,13 @@ urlgrey@0.4.4:
 
 uuid@^3.3.2, uuid@^3.3.3:
   version "3.4.0"
-  resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.4.0.tgz?cache=0&sync_timestamp=1583326207173&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+  resolved "https://registry.npm.taobao.org/uuid/download/uuid-3.4.0.tgz?cache=0&sync_timestamp=1585686762108&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
 
 uuid@^7.0.0:
-  version "7.0.2"
-  resolved "https://registry.npm.taobao.org/uuid/download/uuid-7.0.2.tgz?cache=0&sync_timestamp=1583326207173&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-7.0.2.tgz#7ff5c203467e91f5e0d85cfcbaaf7d2ebbca9be6"
-  integrity sha1-f/XCA0Z+kfXg2Fz8uq99LrvKm+Y=
+  version "7.0.3"
+  resolved "https://registry.npm.taobao.org/uuid/download/uuid-7.0.3.tgz?cache=0&sync_timestamp=1585686762108&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuuid%2Fdownload%2Fuuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
+  integrity sha1-xcnyyM8l3Ao3LE3xRBxB9b0MaAs=
 
 v8-compile-cache@^2.0.3:
   version "2.1.0"

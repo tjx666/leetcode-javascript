@@ -37,7 +37,7 @@
         "eslint-plugin-import": "^2.20.2",
         "husky": "^4.2.3",
         "intelli-espower-loader": "^1.0.1",
-        "lint-staged": "^10.1.0",
+        "lint-staged": "^10.1.1",
         "lodash": "^4.17.15",
         "mocha": "^7.1.1",
         "mochawesome": "^5.0.0",

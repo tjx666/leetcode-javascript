@@ -1,26 +1,20 @@
 /**
- * 首尾双指针
+ * 双指针
+ * 慢指针指向最后一个不重复元素的下标
  *
  * @param {number[]} nums
  * @param {number} val
  * @return {number}
  */
 function removeElement(nums, val) {
-    let n = nums.length;
-    let i = 0;
-
-    while (i < n) {
-        if (nums[i] === val) {
-            nums[i] = nums[n - 1];
-            n--;
-        } else {
-            i++;
+    let slow = -1;
+    for (let fast = 0, len = nums.length; fast < len; fast++) {
+        if (nums[fast] !== val) {
+            nums[++slow] = nums[fast];
         }
     }
 
-    nums.length = n;
-
-    return n;
+    return slow + 1;
 }
 
 module.exports = removeElement;

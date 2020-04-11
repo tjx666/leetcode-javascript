@@ -1,5 +1,5 @@
 const assert = require('assert');
-const addTwoNumbers = require('../../src/0002- Add Two Numbers/addTwoNumbers');
+const addTwoNumbers = require('../../src/0002-Add Two Numbers/addTwoNumbers');
 
 describe('#0002- Add Two Numbers', () => {
     it('should return the new list plus by two given list', () => {

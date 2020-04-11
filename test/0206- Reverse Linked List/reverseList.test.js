@@ -1,7 +1,7 @@
 const assert = require('assert');
 
-const reverseList1 = require('../../src/0206- Reverse Linked List/reverseList1');
-const reverseList2 = require('../../src/0206- Reverse Linked List/reverseList2');
+const reverseList1 = require('../../src/0206-Reverse Linked List/reverseList1');
+const reverseList2 = require('../../src/0206-Reverse Linked List/reverseList2');
 
 describe('#0206- Reverse Linked List', () => {
     [reverseList1, reverseList2].forEach((reverseList, index) => {

@@ -1,4 +1,4 @@
-const reverseList = require('../0206- Reverse Linked List/reverseList1');
+const reverseList = require('../0206-Reverse Linked List/reverseList1');
 
 /**
  * Definition for singly-linked list.

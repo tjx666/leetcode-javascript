@@ -144,7 +144,7 @@
   resolved "https://registry.npm.taobao.org/@babel/parser/download/@babel/parser-7.9.4.tgz?cache=0&sync_timestamp=1585038714563&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.9.4.tgz#68a35e6b0319bbc014465be43828300113f2f2e8"
   integrity sha1-aKNeawMZu8AURlvkOCgwARPy8ug=
 
-"@babel/runtime@^7.8.7":
+"@babel/runtime@^7.9.0":
   version "7.9.2"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
   integrity sha1-2Q3wWDo6JS8JqqYZZlNnuuUY2wY=
@@ -1209,11 +1209,11 @@ espurify@^1.3.0, espurify@^1.6.0:
     core-js "^2.0.0"
 
 esquery@^1.0.1:
-  version "1.3.0"
-  resolved "https://registry.npm.taobao.org/esquery/download/esquery-1.3.0.tgz?cache=0&sync_timestamp=1586913575456&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fesquery%2Fdownload%2Fesquery-1.3.0.tgz#e5e29a6f66a837840d34f68cb9ce355260d1128b"
-  integrity sha1-5eKab2aoN4QNNPaMuc41UmDREos=
+  version "1.3.1"
+  resolved "https://registry.npm.taobao.org/esquery/download/esquery-1.3.1.tgz#b78b5828aa8e214e29fb74c4d5b752e1c033da57"
+  integrity sha1-t4tYKKqOIU4p+3TE1bdS4cAz2lc=
   dependencies:
-    estraverse "^5.0.0"
+    estraverse "^5.1.0"
 
 esrecurse@^4.1.0:
   version "4.2.1"
@@ -1227,7 +1227,7 @@ estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   resolved "https://registry.npm.taobao.org/estraverse/download/estraverse-4.3.0.tgz?cache=0&sync_timestamp=1586968505635&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Festraverse%2Fdownload%2Festraverse-4.3.0.tgz#398ad3f3c5a24948be7725e83d11a7de28cdbd1d"
   integrity sha1-OYrT88WiSUi+dyXoPRGn3ijNvR0=
 
-estraverse@^5.0.0:
+estraverse@^5.1.0:
   version "5.1.0"
   resolved "https://registry.npm.taobao.org/estraverse/download/estraverse-5.1.0.tgz?cache=0&sync_timestamp=1586968505635&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Festraverse%2Fdownload%2Festraverse-5.1.0.tgz#374309d39fd935ae500e7b92e8a6b4c720e59642"
   integrity sha1-N0MJ05/ZNa5QDnuS6Ka0xyDllkI=
@@ -1961,10 +1961,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.npm.taobao.org/lines-and-columns/download/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-lint-staged@^10.1.3:
-  version "10.1.3"
-  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.1.3.tgz#da27713d3ac519da305381b4de87d5f866b1d2f1"
-  integrity sha1-2idxPTrFGdowU4G03ofV+Gax0vE=
+lint-staged@^10.1.4:
+  version "10.1.4"
+  resolved "https://registry.npm.taobao.org/lint-staged/download/lint-staged-10.1.4.tgz#c0e0930ed5568ada2a7fbd9d300318c87803a4b0"
+  integrity sha1-wOCTDtVWitoqf72dMAMYyHgDpLA=
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
@@ -2866,9 +2866,9 @@ resolve-from@^5.0.0:
   integrity sha1-w1IlhD3493bfIcV1V7wIfp39/Gk=
 
 resolve@^1.10.0, resolve@^1.12.0, resolve@^1.13.1, resolve@^1.3.2:
-  version "1.16.0"
-  resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.16.0.tgz#063dc704fa3413e13ac1d0d1756a7cbfe95dd1a7"
-  integrity sha1-Bj3HBPo0E+E6wdDRdWp8v+ld0ac=
+  version "1.16.1"
+  resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.16.1.tgz?cache=0&sync_timestamp=1587158369162&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fresolve%2Fdownload%2Fresolve-1.16.1.tgz#49fac5d8bacf1fd53f200fa51247ae736175832c"
+  integrity sha1-SfrF2LrPH9U/IA+lEkeuc2F1gyw=
   dependencies:
     path-parse "^1.0.6"
 
@@ -3523,11 +3523,11 @@ y18n@^4.0.0:
   integrity sha1-le+U+F7MgdAHwmThkKEg8KPIVms=
 
 yaml@^1.7.2:
-  version "1.8.3"
-  resolved "https://registry.npm.taobao.org/yaml/download/yaml-1.8.3.tgz#2f420fca58b68ce3a332d0ca64be1d191dd3f87a"
-  integrity sha1-L0IPyli2jOOjMtDKZL4dGR3T+Ho=
+  version "1.9.0"
+  resolved "https://registry.npm.taobao.org/yaml/download/yaml-1.9.0.tgz#dc1ff3e24837b62bc3c8ae02c28e16ee5742b9d6"
+  integrity sha1-3B/z4kg3tivDyK4Cwo4W7ldCudY=
   dependencies:
-    "@babel/runtime" "^7.8.7"
+    "@babel/runtime" "^7.9.0"
 
 yargs-parser@13.1.2, yargs-parser@^13.1.2:
   version "13.1.2"
@@ -3538,9 +3538,9 @@ yargs-parser@13.1.2, yargs-parser@^13.1.2:
     decamelize "^1.2.0"
 
 yargs-parser@^18.1.1:
-  version "18.1.2"
-  resolved "https://registry.npm.taobao.org/yargs-parser/download/yargs-parser-18.1.2.tgz#2f482bea2136dbde0861683abea7756d30b504f1"
-  integrity sha1-L0gr6iE2294IYWg6vqd1bTC1BPE=
+  version "18.1.3"
+  resolved "https://registry.npm.taobao.org/yargs-parser/download/yargs-parser-18.1.3.tgz#be68c4975c6b2abf469236b0c870362fab09a7b0"
+  integrity sha1-vmjEl1xrKr9GkjawyHA2L6sJp7A=
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"

@@ -11,13 +11,13 @@ function reverse(x) {
     const MIN_INTEGER = -(2 ** 31);
 
     let ans = 0;
-    while (x > 0) {
+    while (x !== 0) {
         const pop = x % 10;
         if (ans > MAX_INTEGER / 10 || ans < MIN_INTEGER / 10) {
             return 0;
         }
         ans = ans * 10 + pop;
-        x /= 10;
+        x = (x / 10) | 0;
     }
 
     return ans;

@@ -17,6 +17,7 @@ function pathSum(root, sum) {
         const updatedRest = rest - node.val;
         if (updatedRest === 0) {
             count++;
+            // 这里不能立即 return，因为有可能继续深搜还可以找到和为给定值的路径，例如和为 0，当前路径 -1, 1, 但是继续深搜可以有 -1, 1, -2, 2
         }
 
         dfsFindPath(node.left, updatedRest);

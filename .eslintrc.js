@@ -20,6 +20,7 @@ module.exports = {
         'func-names': OFF,
         'no-bitwise': OFF,
         'no-console': OFF,
+        'no-constant-condition': OFF,
         'no-continue': OFF,
         'no-empty': OFF,
         'no-param-reassign': OFF,

@@ -39,7 +39,7 @@
         "intelli-espower-loader": "^1.0.1",
         "lint-staged": "^10.2.6",
         "lodash": "^4.17.15",
-        "mocha": "^7.1.2",
+        "mocha": "^7.2.0",
         "mochawesome": "^6.1.1",
         "nyc": "^15.0.1",
         "power-assert": "^1.6.1",

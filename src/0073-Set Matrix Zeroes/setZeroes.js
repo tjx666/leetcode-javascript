@@ -35,7 +35,7 @@ function setZeroes(matrix) {
         }
     }
 
-    // 当都处理第一行
+    // 单独处理第一行
     for (let j = 1; j < col; j++) {
         if (matrix[0][0] === 0) {
             matrix[0][j] = 0;

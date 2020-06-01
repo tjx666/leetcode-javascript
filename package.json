@@ -41,7 +41,7 @@
         "lodash": "^4.17.15",
         "mocha": "^7.2.0",
         "mochawesome": "^6.1.1",
-        "nyc": "^15.0.1",
+        "nyc": "^15.1.0",
         "power-assert": "^1.6.1",
         "prettier": "^2.0.5"
     }

@@ -1,5 +1,5 @@
 const assert = require('assert');
-const addBinary = require('../../src/0067-Add Binary/addBinary');
+const addBinary = require('../../src/0067-Add Binary/addBinary1');
 
 describe('#0067-Add Binary', () => {
     it('should return the sum of tow binary integer string', () => {

@@ -1,15 +1,8 @@
 /**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-/**
- * 判断是否为回文链表
- * 递归解法：
- * 利用递归可以反向遍历链表的特点，让反向节点和正向节点进行对比
- *
+ * 题述：判断是否为回文链表
+ * 思路：递归解法 利用递归可以反向遍历链表的特点，让反向节点和正向节点进行对比
+ * 时间复杂度：n，n 为节点的数量，递归的深度
+ * 空间复杂度：n，递归需要栈空间
  * @param {ListNode} head
  * @return {boolean}
  * @example

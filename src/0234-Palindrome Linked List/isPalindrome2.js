@@ -1,16 +1,10 @@
 const reverseList = require('../0206-Reverse Linked List/reverseList1');
 
 /**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
-/**
- * 判断是否为回文链表
- * 利用快慢指针，一个每次走两步，一个走一步，当快指针走到头了，此时慢指针刚好会是前半段尾节点或者中间节点
- * 解题步骤就是反转后半段，判断两条链表是不是一样的
+ * 题述：判断是否为回文链表
+ * 思路：反转后半段链表然后和前半段判断是否先等
+ * 时间复杂度：n，n 是链表节点数
+ * 空间复杂度：n
  *
  * @param {ListNode} head
  * @return {boolean}
@@ -41,6 +35,10 @@ function isPalindrome(head) {
     return j == null;
 }
 
+/**
+ * 快指针每次走两步，慢指针每次走一步，快指针走完了慢指针就到中间节点
+ * @param {LinkNode} head
+ */
 function getMiddleNode(head) {
     if (head == null) return null;
     if (head.next == null || head.next.next == null) return head;

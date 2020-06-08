@@ -1,9 +1,7 @@
 /**
  * 题述： 罗马数字字符串转整数
- * 思路：遍历字符串，看最近两个字符是不是 mapper 中的有效字符，不是的话就取当前字符代表的值
  * 算法复杂度：n
- * 空间复杂度：常数级别
- *
+ * 空间复杂度：1
  * @param {string} s
  * @return {number}
  */
@@ -24,18 +22,19 @@ function romanToInt(s) {
         ['I', 1],
     ]);
 
+    const len = s.length;
     let result = 0;
-    for (let i = 0, len = s.length; i < len; i++) {
-        if (i + 1 <= len) {
-            const nearTwoChar = s.slice(i, i + 2);
-            if (mapper.has(nearTwoChar)) {
-                result += mapper.get(nearTwoChar);
-                i++;
-                continue;
-            }
+    let i = 0;
+    while (i < len) {
+        const twoChar = s.slice(i, i + 2);
+        // 先取 2 个字符的罗马数字，考虑 s 为 IV 的情况，先取单个字符串就是 6 了
+        if (mapper.has(twoChar)) {
+            result += mapper.get(twoChar);
+            i += 2;
+        } else {
+            result += mapper.get(s[i]);
+            i++;
         }
-
-        result += mapper.get(s[i]);
     }
 
     return result;

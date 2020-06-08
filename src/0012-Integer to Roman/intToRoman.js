@@ -1,10 +1,12 @@
 /**
- * 整数转罗马数字
- *
+ * 题述：整数转罗马数字
+ * 时间复杂度：n，外层循环是常数级别的，所以看里层循环的复杂度级别
+ * 空间复杂度：1
  * @param {number} num
  * @returns {string}
  */
 function intToRoman(num) {
+    // 权重由高到低
     const intRomanMapper = new Map([
         [1000, 'M'],
         [900, 'CM'],
@@ -21,17 +23,16 @@ function intToRoman(num) {
         [1, 'I'],
     ]);
 
-    let currentMaxIndex = -1;
-    let currentNum = num;
     let result = '';
-    while (++currentMaxIndex < intRomanMapper.size) {
-        const currentMax = [...intRomanMapper.entries()][currentMaxIndex][0];
-        while (currentNum >= currentMax) {
-            result = `${result}${intRomanMapper.get(currentMax)}`;
-            currentNum -= currentMax;
+    for (const [value, RomanStr] of intRomanMapper.entries()) {
+        if (num === 0) return result;
+        while (num >= value) {
+            result += RomanStr;
+            num -= value;
         }
     }
 
     return result;
 }
+
 module.exports = intToRoman;

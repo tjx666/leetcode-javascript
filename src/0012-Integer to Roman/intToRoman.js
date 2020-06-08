@@ -7,7 +7,7 @@
  */
 function intToRoman(num) {
     // 权重由高到低
-    const intRomanMapper = new Map([
+    const intRomanMapper = [
         [1000, 'M'],
         [900, 'CM'],
         [500, 'D'],
@@ -21,18 +21,16 @@ function intToRoman(num) {
         [5, 'V'],
         [4, 'IV'],
         [1, 'I'],
-    ]);
+    ];
 
     let result = '';
-    for (const [value, RomanStr] of intRomanMapper.entries()) {
+    for (let i = 0, len = intRomanMapper.length; i < len; i++) {
         if (num === 0) return result;
+        const [value, romanStr] = intRomanMapper[i];
         while (num >= value) {
-            result += RomanStr;
+            result += romanStr;
             num -= value;
         }
     }
-
     return result;
 }
-
-module.exports = intToRoman;

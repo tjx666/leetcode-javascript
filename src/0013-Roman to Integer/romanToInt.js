@@ -36,6 +36,5 @@ function romanToInt(s) {
             i++;
         }
     }
-
     return result;
 }

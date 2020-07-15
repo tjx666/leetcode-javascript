@@ -12,6 +12,13 @@
         "**/node_modules/*/**": true,
         "yarn.lock": true
     },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },

@@ -25,5 +25,6 @@ function lengthOfLastWord(str) {
             break;
         }
     }
+
     return len;
 }

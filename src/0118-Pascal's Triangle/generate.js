@@ -1,20 +1,26 @@
 /**
+ * 题述：杨辉三角
+ * 思路：迭代，动态规划，generate(n) 可以由 generate(n - 1) 推导出
+ * 时间复杂度：numRows²
+ * 空间复杂度：numRows²
  * @param {number} numRows
  * @return {number[][]}
  */
 function generate(numRows) {
-    const result = [];
+    const length = numRows;
+    if (length === 0) return [];
 
-    for (let i = 0; i < numRows; i++) {
-        const arr = [1];
+    const triangle = [[1]];
+    for (let i = 1; i < length; i++) {
+        const currentLevel = [1];
         for (let j = 1; j < i; j++) {
-            arr[j] = result[i - 1][j] + result[i - 1][j - 1];
+            const previousLevel = triangle[i - 1];
+            currentLevel[j] = previousLevel[j - 1] + previousLevel[j];
         }
-        arr[i] = 1;
-        result.push(arr);
+        currentLevel.push(1);
+        triangle.push(currentLevel);
     }
 
-    return result;
+    return triangle;
 }
-
 module.exports = generate;

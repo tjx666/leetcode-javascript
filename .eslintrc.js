@@ -29,6 +29,7 @@ module.exports = {
         'no-unused-expressions': OFF,
         'no-unused-vars': OFF,
         'no-use-before-define': [ERROR, { functions: false }],
+        'no-cond-assign': OFF,
     },
     overrides: [
         {

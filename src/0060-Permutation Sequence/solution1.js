@@ -1,6 +1,8 @@
 /**
  * 题述：第k个排列
  * 思路：回溯
+ * 时间复杂度：n!
+ * 空间复杂度：n
  * @param {number} n
  * @param {number} k
  * @return {string}

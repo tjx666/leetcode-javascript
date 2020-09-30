@@ -28,3 +28,5 @@ function twoSum(nums, target) {
 }
 
 module.exports = twoSum;
+
+twoSum([3, 1, 6], 9);

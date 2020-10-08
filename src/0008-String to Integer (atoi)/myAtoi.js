@@ -1,5 +1,5 @@
 /**
- * 题述：字符串转整数
+ * 题述：字符串转整数 `number`
  * 思路：其实就是 parseInt，这里用正则来解只是为了熟悉下正则
  * @param {string} str
  * @return {number}

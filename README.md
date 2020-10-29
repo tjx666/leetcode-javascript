@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/tjx666/leetcode-javascript/master?logo=Travis-CI)](https://travis-ci.org/tjx666/leetcode-javascript) [![codecov](https://codecov.io/gh/tjx666/leetcode-javascript/branch/master/graph/badge.svg)](https://codecov.io/gh/tjx666/leetcode-javascript) [![LeetCode Progress](https://img.shields.io/badge/LeetCode-298%20%2F%201726-brightgreen?logo=LeetCode)](https://leetcode-cn.com/u/yutengjing/)
+[![Build Status](https://img.shields.io/travis/tjx666/leetcode-javascript/master?logo=Travis-CI)](https://travis-ci.org/tjx666/leetcode-javascript) [![codecov](https://codecov.io/gh/tjx666/leetcode-javascript/branch/master/graph/badge.svg)](https://codecov.io/gh/tjx666/leetcode-javascript) [![LeetCode Progress](https://img.shields.io/badge/LeetCode-299%20%2F%201726-brightgreen?logo=LeetCode)](https://leetcode-cn.com/u/yutengjing/)
 
 使用 JavaScript 刷 LeetCode
 

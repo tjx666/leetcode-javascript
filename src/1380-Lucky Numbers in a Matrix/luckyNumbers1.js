@@ -13,13 +13,14 @@ function luckyNumbers(matrix) {
     const row = matrix.length;
     if (row === 0) return [];
     const column = matrix[0].length;
+    if (column === 0) return [];
 
-    const rMin = new Array(row);
-    const cMax = new Array(column);
-    for (let i = 0; i < column; i++) {
-        for (let j = 0; j < row; j++) {
+    const rMin = new Array(row).fill(Infinity);
+    const cMax = new Array(column).fill(-Infinity);
+    for (let i = 0; i < row; i++) {
+        for (let j = 0; j < column; j++) {
             rMin[i] = Math.min(rMin[i], matrix[i][j]);
-            cMax[i] = Math.max(cMax[i], matrix[i][j]);
+            cMax[j] = Math.max(cMax[j], matrix[i][j]);
         }
     }
 
@@ -27,7 +28,7 @@ function luckyNumbers(matrix) {
     for (let i = 0; i < row; i++) {
         for (let j = 0; j < column; j++) {
             const value = matrix[i][j];
-            if (value === rMin(i) && value === cMax(j)) {
+            if (value === rMin[i] && value === cMax[j]) {
                 result.push(value);
             }
         }
